@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/24/2017 00:57:53" ReportInfo.Modified="04/27/2017 13:16:24" ReportInfo.CreatorVersion="2017.2.8.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpudwnCNpbNK/Ifx3uxWw0MRilWKLsZy1703KeFDqbvsdBfvv4Xu0aehbviyPSAtPQ9BKOq7NbeApCLI8OUqjZY+D0=">
+      <TableDataSource Name="ticket" DataType="System.Int32" Enabled="true" TableName="ticket">
+        <Column Name="numberticket" DataType="System.String"/>
+        <Column Name="whenitbuy" DataType="System.String"/>
+        <Column Name="rout" DataType="System.String"/>
+        <Column Name="from" DataType="System.String"/>
+        <Column Name="to" DataType="System.String"/>
+        <Column Name="dateleave" DataType="System.String"/>
+        <Column Name="dateartive" DataType="System.String"/>
+        <Column Name="numberofst" DataType="System.String"/>
+        <Column Name="numberofp" DataType="System.String"/>
+        <Column Name="totalgain" DataType="System.String"/>
+      </TableDataSource>
+    </XmlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <DataBand Name="Data1" Width="718.2" Height="463.05" DataSource="ticket">
+      <TextObject Name="Text1" Left="9.45" Top="18.9" Width="56.7" Height="18.9" Text="Чек №" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text2" Left="170.1" Top="18.9" Width="170.1" Height="18.9" Text="[ticket.numberticket]"/>
+      <TextObject Name="Text3" Left="9.45" Top="56.7" Width="103.95" Height="18.9" Text="Дата покупки" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="170.1" Top="56.7" Width="170.1" Height="28.35" Text="[ticket.whenitbuy]"/>
+      <TextObject Name="Text5" Left="9.45" Top="94.5" Width="94.5" Height="18.9" Text="Маршрут" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="170.1" Top="94.5" Width="283.5" Height="18.9" Text="[ticket.rout]"/>
+      <TextObject Name="Text7" Left="9.45" Top="132.3" Width="103.95" Height="18.9" Text="Пункт выезда" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text8" Left="170.1" Top="132.3" Width="283.5" Height="18.9" Text="[ticket.from]"/>
+      <TextObject Name="Text9" Left="9.45" Top="170.1" Width="113.4" Height="18.9" Text="Пункт приезда" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text10" Left="170.1" Top="170.1" Width="283.5" Height="18.9" Text="[ticket.to]"/>
+      <TextObject Name="Text11" Left="9.45" Top="207.9" Width="113.4" Height="18.9" Text="Врямя выезда" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text12" Left="170.1" Top="207.9" Width="198.45" Height="18.9" Text="[ticket.dateleave]"/>
+      <TextObject Name="Text13" Left="9.45" Top="245.7" Width="113.4" Height="18.9" Text="Врямя приезда" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text14" Left="170.1" Top="245.7" Width="198.45" Height="18.9" Text="[ticket.dateartive]"/>
+      <TextObject Name="Text15" Left="9.45" Top="283.5" Width="113.4" Height="18.9" Text="Номер места" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text16" Left="170.1" Top="283.5" Width="198.45" Height="18.9" Text="[ticket.numberofst]"/>
+      <TextObject Name="Text17" Left="9.45" Top="321.3" Width="141.75" Height="18.9" Text="Номер платформы" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text18" Left="170.1" Top="321.3" Width="198.45" Height="18.9" Text="[ticket.numberofp]"/>
+      <TextObject Name="Text19" Left="9.45" Top="359.1" Width="132.3" Height="18.9" Text="Всего за билет" Font="Arial, 10pt, style=Bold, Underline"/>
+      <TextObject Name="Text20" Left="170.1" Top="359.1" Width="122.85" Height="18.9" Text="[ticket.totalgain]"/>
+    </DataBand>
+  </ReportPage>
+</Report>

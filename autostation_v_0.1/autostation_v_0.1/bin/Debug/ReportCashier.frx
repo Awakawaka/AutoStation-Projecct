@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/22/2017 01:31:29" ReportInfo.Modified="04/27/2017 14:31:57" ReportInfo.CreatorVersion="2017.2.8.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpudwnCNpbNK/Ifx3uxWw0MRilWKLsZy1703KeFDqbvsdBfvv4Xu0aehbviyPSAtPQ9BLpXUkS087gjRSVu1TrU/3w=">
+      <TableDataSource Name="ForReportCashier" DataType="System.Int32" Enabled="true" TableName="ForReportCashier">
+        <Column Name="ForReportCashier_Id" DataType="System.Int32"/>
+        <Column Name="routs" DataType="System.String"/>
+        <Column Name="dateofmaking" DataType="System.String"/>
+        <Column Name="period" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="dg" DataType="System.Int32" Enabled="true" TableName="dg">
+        <Column Name="routnumber" DataType="System.String"/>
+        <Column Name="rout" DataType="System.String"/>
+        <Column Name="numberoftickets" DataType="System.String"/>
+        <Column Name="numberofreturntickets" DataType="System.String"/>
+        <Column Name="totalgain" DataType="System.String"/>
+        <Column Name="ForReportCashier_Id" DataType="System.Int32"/>
+      </TableDataSource>
+    </XmlDataConnection>
+    <Relation Name="ForReportCashier_dg" ParentDataSource="ForReportCashier" ChildDataSource="dg" ParentColumns="ForReportCashier_Id" ChildColumns="ForReportCashier_Id" Enabled="true"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="160.65">
+      <TextObject Name="Text1" Left="255.15" Top="9.45" Width="198.45" Height="18.9" Text="Отчет по продажам" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text2" Left="264.6" Top="66.15" Width="207.9" Height="18.9" Text="[ForReportCashier.period]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text4" Left="217.35" Top="66.15" Width="37.8" Height="18.9" Text="За:" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text3" Left="56.7" Top="103.95" Width="189" Height="28.35" Text="[ForReportCashier.routs]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text5" Left="9.45" Top="103.95" Width="28.35" Height="18.9" Text="№" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text8" Left="292.95" Top="103.95" Width="198.45" Height="37.8" Text="Кол-во проданных &#13;&#10;билетов&#13;&#10;" HorzAlign="Center" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text10" Left="500.85" Top="103.95" Width="207.9" Height="37.8" Text="Кол-во возвращенных &#13;&#10;билетов&#13;&#10;" HorzAlign="Center" Font="Times New Roman, 14pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="164.65" Width="718.2"/>
+    <DataBand Name="Data1" Top="168.65" Width="718.2" Height="103.95" Guides="56.7" DataSource="dg">
+      <TextObject Name="Text6" Top="9.45" Width="47.25" Height="18.9" Text="[dg.routnumber]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text7" Left="66.15" Top="9.45" Width="189" Height="18.9" Text="[dg.rout]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text9" Left="340.2" Top="9.45" Width="94.5" Height="18.9" Text="[dg.numberoftickets]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text11" Left="548.1" Top="9.45" Width="94.5" Height="18.9" Text="[dg.numberofreturntickets]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text13" Left="9.45" Top="56.7" Width="198.45" Height="37.8" Text="Всего по маршруту:&#13;&#10;" HorzAlign="Center" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text14" Left="217.35" Top="56.7" Width="94.5" Height="18.9" Text="[dg.totalgain]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text15" Left="340.2" Top="56.7" Width="94.5" Height="37.8" Text="грн." HorzAlign="Center" Font="Times New Roman, 14pt"/>
+    </DataBand>
+    <DataBand Name="Data2" Top="276.6" Width="718.2" Height="106.95" DataSource="ForReportCashier">
+      <TextObject Name="Text16" Left="9.45" Width="198.45" Height="28.35" Text="Дата оформления:" HorzAlign="Center" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text12" Left="226.8" Width="160.65" Height="18.9" Text="[ForReportCashier.dateofmaking]" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text17" Left="238.7" Top="69.15" Width="283.5" Height="37.8" Text="Автостанция &quot;Highway to Hell!&quot;" HorzAlign="Center" Font="Times New Roman, 14pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="387.55" Width="718.2" Height="292.95"/>
+  </ReportPage>
+</Report>

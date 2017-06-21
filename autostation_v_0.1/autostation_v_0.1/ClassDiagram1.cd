@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="autostation_v_0._1.driver">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQgAAAAABAAAAAQAEAAAAAgAAAAAAAgA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autostation_v_0._1.ClassSetupProgram">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassSetupProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Registratura.ClassSerialiaze">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>ClassSerialiaze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autostation_v_0._1.timetable">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>timetable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autostation_v_0._1.ClassDataBase">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAQAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassDataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autostation_v_0._1.fm">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ANBBAQQAACAQgAACCACAAGACIAI2KAAAAiABgABBAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="autostation_v_0._1.fmt">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAYAISAAABAAAACAAAhSIAAAAAAAEAIBAAAAAkA=</HashCode>
+      <FileName>fmt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

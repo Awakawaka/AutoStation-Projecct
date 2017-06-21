@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ForReportCashier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" routs="По маршрутам" dateofmaking="27 апреля 2017 г." period="27.04.2017">
+  <dg routnumber="1" rout="Харьков-Николаев" numberoftickets="2" numberofreturntickets="0" totalgain="259,21" />
+  <dg routnumber="5" rout="Харьков-Львов" numberoftickets="5" numberofreturntickets="1" totalgain="4228,22399291992" />
+  <dg routnumber="6" rout="Харьков-Cумы" numberoftickets="2" numberofreturntickets="0" totalgain="183,8" />
+</ForReportCashier>

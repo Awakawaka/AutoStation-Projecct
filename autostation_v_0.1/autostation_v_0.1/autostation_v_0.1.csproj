@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECD3FBD9-BBA5-4C9F-AB6F-2CAE83429A5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>autostation_v_0._1</RootNamespace>
+    <AssemblyName>autostation_v_0.1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport, Version=2017.2.8.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2017.2.8.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2017.2.8.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Install">
+      <HintPath>.\FastReport.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Service">
+      <HintPath>.\FastReport.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.VSDesign, Version=1.0.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.VSDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web, Version=2017.2.8.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>C:\Users\Vova-PC\Desktop\GMap.NET Build-ef25f7c93e70-20150401\Release-NETv4.0\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>C:\Users\Vova-PC\Desktop\GMap.NET Build-ef25f7c93e70-20150401\Release-NETv4.0\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUI.1.3.0.0\lib\net45\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc">
+      <HintPath>C:\Program Files\e-iceblue\Spire.Doc-Fe\Bin\NET2.0\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bttown.cs" />
+    <Compile Include="Bus.cs" />
+    <Compile Include="BusforCB.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ClassDataBase.cs" />
+    <Compile Include="ClassSerialiaze.cs" />
+    <Compile Include="ClassSetupProgram.cs" />
+    <Compile Include="DateFortickets.cs" />
+    <Compile Include="DGVforReport.cs" />
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="DriverCB.cs" />
+    <Compile Include="DriverBus.cs" />
+    <Compile Include="fmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmt.Designer.cs">
+      <DependentUpon>fmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fm.Designer.cs">
+      <DependentUpon>fm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForDGVCahier.cs" />
+    <Compile Include="ForReportCashier.cs" />
+    <Compile Include="FreeSites.cs" />
+    <Compile Include="InformationforCheck.cs" />
+    <Compile Include="InformationforReport.cs" />
+    <Compile Include="MainManeger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainManeger.Designer.cs">
+      <DependentUpon>MainManeger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods.cs" />
+    <Compile Include="MethodsFMT.cs" />
+    <Compile Include="MethodsManager.cs" />
+    <Compile Include="MethodsReportforCashier.cs" />
+    <Compile Include="MethodsRT.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCashier.Designer.cs">
+      <DependentUpon>ReportCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnTicket.cs" />
+    <Compile Include="rt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rt.Designer.cs">
+      <DependentUpon>rt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs" />
+    <Compile Include="SalesBT.cs" />
+    <Compile Include="SearchDouble.cs" />
+    <Compile Include="Shearch.cs" />
+    <Compile Include="ticket.cs" />
+    <Compile Include="TicketForReport.cs" />
+    <Compile Include="timetable.cs" />
+    <Compile Include="towns.cs" />
+    <Compile Include="WholeRout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WholeRout.Designer.cs">
+      <DependentUpon>WholeRout.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmt.resx">
+      <DependentUpon>fmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fm.resx">
+      <DependentUpon>fm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainManeger.resx">
+      <DependentUpon>MainManeger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCashier.resx">
+      <DependentUpon>ReportCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rt.resx">
+      <DependentUpon>rt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WholeRout.resx">
+      <DependentUpon>WholeRout.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

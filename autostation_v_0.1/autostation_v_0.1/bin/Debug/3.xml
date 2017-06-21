@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InformationforCheck xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ticket numberticket="12977" whenitbuy="08.05.2017 21:59:05" rout="Харьков-Красноград" from="Харьков" to="Красноград" dateleave="12.05.2017 10:30:00" dateartive="12.05.2017 12:30:00" numberofst="4" numberofp="1" totalgain="74,2" />
+</InformationforCheck>

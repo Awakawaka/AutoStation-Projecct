@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/19/2017 15:16:33" ReportInfo.Modified="04/19/2017 15:54:30" ReportInfo.CreatorVersion="2017.2.8.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpudwnCNpbNK/Ifx3uxWw0MRilWKLsZy1703KeFDqbvsdBfvv4Xu0aehbviyPSAtPQ9BGno6llobHRdFKzwwHgIug0=">
+      <TableDataSource Name="InformationforReport" DataType="System.Int32" Enabled="true" TableName="InformationforReport">
+        <Column Name="InformationforReport_Id" DataType="System.Int32"/>
+        <Column Name="rout" DataType="System.String"/>
+        <Column Name="quantitysoldticket" DataType="System.String"/>
+        <Column Name="quantityreturnticket" DataType="System.String"/>
+        <Column Name="fromdate" DataType="System.String"/>
+        <Column Name="todate" DataType="System.String"/>
+        <Column Name="gain" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="a" DataType="System.Int32" Enabled="true" TableName="a">
+        <Column Name="rout" DataType="System.String"/>
+        <Column Name="soldtiockets" DataType="System.String"/>
+        <Column Name="gain" DataType="System.String"/>
+        <Column Name="InformationforReport_Id" DataType="System.Int32"/>
+      </TableDataSource>
+    </XmlDataConnection>
+    <Relation Name="InformationforReport_a" ParentDataSource="InformationforReport" ChildDataSource="a" ParentColumns="InformationforReport_Id" ChildColumns="InformationforReport_Id" Enabled="true"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text2" Left="245.7" Top="9.45" Width="189" Height="18.9" Text="Отчет по продажам&#13;&#10;" HorzAlign="Center" Font="Times New Roman, 14pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="170.1">
+      <TextObject Name="Text4" Left="9.45" Width="141.75" Height="18.9" Text="По маршруту&#13;&#10;" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text1" Left="157" Top="-1.95" Width="245.7" Height="28.35" Text="[InformationforReport.rout]" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text3" Left="404.35" Top="-1" Width="94.5" Height="18.9" Text="За числа:" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text5" Left="502.85" Width="113.4" Height="18.9" Text="[InformationforReport.fromdate]" HorzAlign="Justify" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text6" Left="606.8" Width="113.4" Height="18.9" Text="[InformationforReport.todate]" HorzAlign="Justify" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text7" Left="9.45" Top="56.7" Width="302.4" Height="18.9" Text="Количетсво проданных билетов:&#13;&#10;&#13;&#10;" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text8" Left="330.75" Top="56.7" Width="94.5" Height="18.9" Text="[InformationforReport.quantitysoldticket]" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text9" Left="9.45" Top="85.05" Width="330.75" Height="18.9" Text="Количетсво возвращенных билетов:&#13;&#10;&#13;&#10;" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text10" Left="349.65" Top="85.05" Width="94.5" Height="18.9" Text="[InformationforReport.quantityreturnticket]" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text11" Left="9.45" Top="113.4" Width="255.15" Height="18.9" Text="Информация по продажам:&#13;&#10;&#13;&#10;" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text12" Left="9.45" Top="141.75" Width="255.15" Height="18.9" Text="Участок маршрута&#13;&#10;&#13;&#10;" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text14" Left="274.05" Top="141.75" Width="283.5" Height="18.9" Text="Количетсво проданных билетов&#13;&#10;" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text16" Left="567" Top="141.75" Width="283.5" Height="18.9" Text="На сумму&#13;&#10;" Font="Times New Roman, 14pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="215.9" Width="718.2" Height="47.25" DataSource="a">
+      <TextObject Name="Text13" Left="359.1" Top="9.45" Width="94.5" Height="18.9" Text="[a.soldtiockets]" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text15" Left="9.45" Top="9.45" Width="255.15" Height="18.9" Text="[a.rout]" Font="Times New Roman, 14pt"/>
+      <TextObject Name="Text17" Left="567" Top="9.45" Width="94.5" Height="18.9" Text="[a.gain]" Font="Times New Roman, 14pt"/>
+    </DataBand>
+    <ColumnFooterBand Name="ColumnFooter1" Top="267.15" Width="718.2" Height="37.8">
+      <TextObject Name="Text18" Left="18.9" Top="9.45" Width="189" Height="18.9" Text="Всего по маршруту:&#13;&#10;&#13;&#10;" Font="Times New Roman, 14pt, style=Bold"/>
+      <TextObject Name="Text19" Left="302.4" Top="9.45" Width="160.65" Height="18.9" Text="[InformationforReport.gain]" Font="Times New Roman, 14pt"/>
+    </ColumnFooterBand>
+    <PageFooterBand Name="PageFooter1" Top="308.95" Width="718.2" Height="292.95"/>
+  </ReportPage>
+</Report>
